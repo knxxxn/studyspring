@@ -1,5 +1,7 @@
 package studyspring.studyspring.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import studyspring.studyspring.domain.Member;
 import studyspring.studyspring.repository.MemberRepository;
 import studyspring.studyspring.repository.MemoryMemberRepository;
