@@ -3,6 +3,7 @@ package studyspring.studyspring;
 import jakarta.persistence.EntityManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import studyspring.studyspring.aop.TimeTraceAop;
 import studyspring.studyspring.repository.JdbcTemplateMemberRepository;
 import studyspring.studyspring.repository.MemberRepository;
 import studyspring.studyspring.service.MemberService;
@@ -40,4 +41,9 @@ public class SpringConfig {
     public MemberService memberService() {
         return new MemberService(memberRepository);
     }
+
+    //@Bean
+    //public TimeTraceAop(){
+        //return new TimeTraceAop();
+    //}
 }
